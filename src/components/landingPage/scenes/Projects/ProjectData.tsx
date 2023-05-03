@@ -88,11 +88,11 @@ const projectsData: Array<ProjectType> = [
     {
         id: 7,
         name: "Rocket",
+        image: image2,
         link1: 'https://github.com/sepideh-sharifani/Rocket',
         description: " 	Practicing basics of javascript and css",
         categories: ["javascript"],
         TechStack: "Html, css, javascript",
-        image: image2
     },
     {
         id: 8,
