@@ -18,7 +18,7 @@ type Props = {
 const Home = ({ setSelectedPage }: Props) => {
     const isAboveMediaQuery = useMediaQuery('(min-width:800px)');
     return (
-        <section id="home" className='bg-white flex flex-col items-center justify-center pb-4 bg-gray-20 py-32 h-full bg-homeBg bg-cover bg-bottom'>
+        <section id="home" className='bg-white flex flex-col items-center justify-center pb-4 bg-gray-20 mt-14 h-full bg-homeBg bg-cover bg-bottom'>
             <div className='flex flex-col items-center justify-around bg-gray-1 w-4/5 h-fit md:h-4/5 p-5 m-auto bg-opacity-90 rounded-xl'>
                 <motion.div className='flex flex-col-reverse gap-4 items-center justify-evenly z-10 basis-1/3 mb-4 md:flex md:flex-row md:gap-20'
                     onViewportEnter={() => setSelectedPage(SelectedPage.Home)}>
