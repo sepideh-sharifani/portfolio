@@ -3,7 +3,7 @@ import { AiOutlineGithub } from 'react-icons/ai';
 import { HiOutlineArrowCircleDown } from 'react-icons/hi'
 import { FaLinkedin } from 'react-icons/fa';
 import Typed from 'react-typed';
-import resume from '@/assets/sepideh-sharifani-CV.pdf';
+import resume from '@/assets/sepideh-sharifani-CV1.pdf';
 import { motion } from 'framer-motion';
 import me from '@/assets/me.jpg'
 import AnchorLink from 'react-anchor-link-smooth-scroll';
