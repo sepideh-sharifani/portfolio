@@ -16,7 +16,7 @@ const Projects = ({ setSelectedPage }: Props) => {
                 <fieldset className='border-t-2 border-black text-center'>
                     <legend className='px-2 font-extrabold text-4xl md:text-6xl'>My{' '}<span className='text-gray-2'>Projects</span></legend>
                 </fieldset>
-                <div className="mt-10 p-10 grid xs:grid-cols-2 md:grid-cols-3 md:w-fit gap-6 m-auto">
+                <div className="mt-10 p-10 grid sm:grid-cols-2 md:grid-cols-3 gap-6 m-auto">
                     {ProjectsData.slice(0, 3).map((item: ProjectType) => (
                         <Project
                             key={item.id}
@@ -35,7 +35,7 @@ const Projects = ({ setSelectedPage }: Props) => {
 
                 </div>
             </motion.div>
-            <Link to='/projects'><button className="m-auto transition delay-150 duration-300 flex items-center justify-center bg-orange-10 w-40 h-10 font-bold rounded-md hover:bg-gray-2 hover:text-white">view all projects</button></Link>
+            <Link to='/projects'><button className="m-auto transition delay-150 duration-300 flex items-center justify-center bg-orange-10 w-40 h-10 font-bold rounded-md mt-20 hover:bg-gray-2 hover:text-white">view all projects</button></Link>
         </section>
     )
 }

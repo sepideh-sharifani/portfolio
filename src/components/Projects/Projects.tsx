@@ -23,7 +23,7 @@ function Projects({ setSelctedPage }: Props) {
 
     //pagination
     const [currentPage, setCurrentPage] = useState(1);
-    const itemsPerPage = window.innerWidth >= 1000 ? 6 : 3;
+    const itemsPerPage = window.innerWidth >= 1000 ? 6 : 2;
     const startIndex = (currentPage - 1) * itemsPerPage;
     const endIndex = startIndex + itemsPerPage;
     const totalPages = Math.ceil(filteredData.length / itemsPerPage);
@@ -74,7 +74,7 @@ function Projects({ setSelctedPage }: Props) {
                         <button className='bg-white w-24 border-2 border-gray-2 hover:bg-orange-10 rounded-md' onClick={() => handleClick("sass")}>Sass</button>
                     </div>
 
-                    <div className='bg-gray-1 w-11/12 grid xs:grid-cols-2 md:grid-cols-3 gap-5 p-5'>
+                    <div className='bg-gray-1 w-11/12 grid sm:grid-cols-2 lg:grid-cols-3 gap-5 p-5'>
                         {
                             filteredData.slice(startIndex, endIndex).map((item, i) => (
                                 <ProjectCard
