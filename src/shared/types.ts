@@ -7,6 +7,7 @@ export enum SelectedPage {
 
 export interface ProjectType {
   id: number;
+  categories: string[];
   name: string;
   link1: string;
   link2?: string;

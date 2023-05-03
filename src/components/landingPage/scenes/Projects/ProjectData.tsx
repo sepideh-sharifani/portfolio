@@ -32,6 +32,7 @@ const projectsData: Array<ProjectType> = [
         image2: epay2,
         image3: epay3,
         image4: epay4,
+        categories: ["nextjs", "sass", "react"],
         TechStack: "nextjs, React, Redux, JSX, Sass, Formik, Yup, yarn, git"
     },
     {
@@ -42,6 +43,7 @@ const projectsData: Array<ProjectType> = [
         image1: academy1,
         image2: academy2,
         image3: academy3,
+        categories: ["nextjs", "tailwind", "react", "typescript"],
         description: " 	Designed and developed an app with React, Functional Component, TypeScript along with responsive interactive UIs.  	Using Trello and github for the development",
         TechStack: "React,nextjs, JSX,TypeScript, TailwindCSS, React-Router-Dom, Formik, Yup, npm"
     },
@@ -52,6 +54,7 @@ const projectsData: Array<ProjectType> = [
         image: image9,
         image1: omg1,
         image2: omg2,
+        categories: ["tailwind", "react", "typescript"],
         description: "Designed and developed an app with React, Functional Component, TypeScript and JSON server along with interactive UIs. Using github for the development.",
         TechStack: "React, JSX,TypeScript, Context api, TailwindCSS"
     },
@@ -60,6 +63,7 @@ const projectsData: Array<ProjectType> = [
         name: "Dashboard",
         link1: "https://github.com/sepideh-sharifani/CSS-Dashboard",
         image: image5,
+        categories: ["javascript"],
         description: " 	Practiced concepts of html,css,JavaScript and chartJS, while enabling the dark mode",
         TechStack: "ChartJS, Html,CSS,JavaScript"
     },
@@ -68,6 +72,7 @@ const projectsData: Array<ProjectType> = [
         name: "To Do List",
         link1: "https://github.com/sepideh-sharifani/TodoList-ModularJS",
         image: image4,
+        categories: ["javascript"],
         description: "Designed and developed an app using modularJS, css",
         TechStack: "Html,CSS,JavaScript"
     },
@@ -76,6 +81,7 @@ const projectsData: Array<ProjectType> = [
         name: "Real State",
         link1: 'https://github.com/sepideh-sharifani/realEstate-landingPage-Tailwind',
         image: image7,
+        categories: ["tailwind"],
         description: " 	Practiced the basic concepts of tailwindCSS",
         TechStack: "Tailwind, Html"
     },
@@ -84,6 +90,7 @@ const projectsData: Array<ProjectType> = [
         name: "Rocket",
         link1: 'https://github.com/sepideh-sharifani/Rocket',
         description: " 	Practicing basics of javascript and css",
+        categories: ["javascript"],
         TechStack: "Html, css, javascript",
         image: image2
     },
@@ -92,6 +99,7 @@ const projectsData: Array<ProjectType> = [
         name: "Tic-Tac-Toe",
         link1: 'https://github.com/sepideh-sharifani/Tic-Tac-Toe',
         image: image3,
+        categories: ["javascript"],
         description: " 	Practicing basics of javascript and css",
         TechStack: "Html, css, javascript"
     },
@@ -102,6 +110,7 @@ const projectsData: Array<ProjectType> = [
         name: "Roll the Dice",
         link1: 'https://github.com/sepideh-sharifani/roll-the-dice',
         image: image6,
+        categories: ["javascript"],
         description: " 	Practicing basics of javascript and css",
         TechStack: "Html, css, javascript"
     },

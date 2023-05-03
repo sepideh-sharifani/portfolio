@@ -12,11 +12,21 @@ type Props = {
 }
 
 function Projects({ setSelctedPage }: Props) {
+
+    //filtering
+    const [selectedCategory, setSelectedCategory] = useState('all');
+    const handleClick = (category: string) => {
+        setSelectedCategory(category);
+    }
+    const filteredData = selectedCategory === 'all' ?
+        projectsData : projectsData.filter((item) => item.categories.includes(selectedCategory))
+
+    //pagination
     const [currentPage, setCurrentPage] = useState(1);
     const itemsPerPage = window.innerWidth >= 1000 ? 6 : 3;
     const startIndex = (currentPage - 1) * itemsPerPage;
     const endIndex = startIndex + itemsPerPage;
-    const totalPages = Math.ceil(projectsData.length / itemsPerPage);
+    const totalPages = Math.ceil(filteredData.length / itemsPerPage);
     const maxPagesToShow = 5;
     const pageDiff = Math.floor(maxPagesToShow / 2);
     const minPageToShow = Math.max(1, currentPage - pageDiff);
@@ -32,7 +42,6 @@ function Projects({ setSelctedPage }: Props) {
     const handlePageClick = (page: number) => {
         setCurrentPage(page);
     };
-
     const pageButtons = [];
     for (let i = minPageToShow; i <= maxPageToShow; i++) {
         pageButtons.push(
@@ -41,7 +50,6 @@ function Projects({ setSelctedPage }: Props) {
             </button>
         );
     }
-
 
     return (
         <>
@@ -58,19 +66,19 @@ function Projects({ setSelctedPage }: Props) {
                     </div>
 
                     <div className='flex items-center gap-3 flex-wrap justify-center'>
-                        <button className='bg-white w-24 border-2 border-gray-2 hover:bg-orange-10 rounded-md'>All</button>
-                        <button className='bg-white w-24 border-2 border-gray-2 hover:bg-orange-10 rounded-md'>NextJs</button>
-                        <button className='bg-white w-24 border-2 border-gray-2 hover:bg-orange-10 rounded-md'>React</button>
-                        <button className='bg-white w-24 border-2 border-gray-2 hover:bg-orange-10 rounded-md'>javaScript</button>
-                        <button className='bg-white w-24 border-2 border-gray-2 hover:bg-orange-10 rounded-md'>tailwind</button>
-                        <button className='bg-white w-24 border-2 border-gray-2 hover:bg-orange-10 rounded-md'>Sass</button>
+                        <button className='bg-white w-24 border-2 border-gray-2 hover:bg-orange-10 rounded-md' onClick={() => handleClick("all")}>All</button>
+                        <button className='bg-white w-24 border-2 border-gray-2 hover:bg-orange-10 rounded-md' onClick={() => handleClick("nextjs")}>NextJs</button>
+                        <button className='bg-white w-24 border-2 border-gray-2 hover:bg-orange-10 rounded-md' onClick={() => handleClick("react")}>React</button>
+                        <button className='bg-white w-24 border-2 border-gray-2 hover:bg-orange-10 rounded-md' onClick={() => handleClick("javascript")}>javaScript</button>
+                        <button className='bg-white w-24 border-2 border-gray-2 hover:bg-orange-10 rounded-md' onClick={() => handleClick("tailwind")}>tailwind</button>
+                        <button className='bg-white w-24 border-2 border-gray-2 hover:bg-orange-10 rounded-md' onClick={() => handleClick("sass")}>Sass</button>
                     </div>
 
                     <div className='bg-gray-1 w-11/12 grid xs:grid-cols-2 md:grid-cols-3 gap-5 p-5'>
                         {
-                            projectsData.slice(startIndex, endIndex).map((item, i) => (
+                            filteredData.slice(startIndex, endIndex).map((item, i) => (
                                 <ProjectCard
-                                    key={item.id}
+                                    key={i}
                                     name={item.name}
                                     link1={item.link1}
                                     link2={item.link2}

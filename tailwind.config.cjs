@@ -29,6 +29,7 @@ module.exports = {
         "mobile-home": "url('./assets/homePageGraphic.png')",
         fixedBg: "url('./assets/fixedBg.jpg')",
         homeBg: "url('./assets/homeBg.png')",
+        contactBg: "url('./assets/contactBg.png')",
       }),
       fontFamily: {
         Montserrat: ["Montserrat", "sans-serif"],
