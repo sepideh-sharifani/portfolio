@@ -3,7 +3,7 @@ import { AiFillInstagram, AiOutlineGithub } from 'react-icons/ai';
 import { HiOutlineArrowCircleDown } from 'react-icons/hi'
 import { FaLinkedin } from 'react-icons/fa';
 import Typed from 'react-typed';
-import resume from '@/assets/CV.pdf';
+import resume from '@/assets/sepideh-sharifani-CV.pdf';
 import { motion } from 'framer-motion';
 import useMediaQuery from '@/hooks/useMediaQuery';
 import me from '@/assets/me.jpg'
