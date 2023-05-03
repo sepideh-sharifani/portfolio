@@ -1,13 +1,11 @@
 import { SelectedPage } from '@/shared/types'
-import { AiFillInstagram, AiOutlineGithub } from 'react-icons/ai';
+import { AiOutlineGithub } from 'react-icons/ai';
 import { HiOutlineArrowCircleDown } from 'react-icons/hi'
 import { FaLinkedin } from 'react-icons/fa';
 import Typed from 'react-typed';
 import resume from '@/assets/sepideh-sharifani-CV.pdf';
 import { motion } from 'framer-motion';
-import useMediaQuery from '@/hooks/useMediaQuery';
 import me from '@/assets/me.jpg'
-import AboutMe from '../aboutMe';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 
@@ -16,9 +14,8 @@ type Props = {
 }
 
 const Home = ({ setSelectedPage }: Props) => {
-    const isAboveMediaQuery = useMediaQuery('(min-width:800px)');
     return (
-        <section id="home" className='bg-white flex flex-col items-center justify-center pb-4 bg-gray-20 mt-14 h-full bg-homeBg bg-cover bg-bottom'>
+        <section id="home" className='bg-white flex flex-col items-center justify-center pt-20 pb-4 bg-gray-20 mt-14 h-full bg-homeBg bg-cover bg-bottom'>
             <div className='flex flex-col items-center justify-around bg-gray-1 w-4/5 h-fit md:h-4/5 p-5 m-auto bg-opacity-90 rounded-xl'>
                 <motion.div className='flex flex-col-reverse gap-4 items-center justify-evenly z-10 basis-1/3 mb-4 md:flex md:flex-row md:gap-20'
                     onViewportEnter={() => setSelectedPage(SelectedPage.Home)}>
