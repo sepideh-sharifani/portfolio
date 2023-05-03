@@ -1,23 +1,22 @@
 import { ProjectType } from '@/shared/types'
-import image1 from '@/assets/projects/image1.png';
-import image2 from '@/assets/projects/image2.png';
-import image3 from '@/assets/projects/image3.png';
-import image4 from '@/assets/projects/image4.png';
-import image5 from '@/assets/projects/image5.png';
-import image6 from '@/assets/projects/image6.png';
-import image7 from '@/assets/projects/image7.png';
-import image8 from '@/assets/projects/image8.png'
-import image10 from '@/assets/projects/image10.png'
-import image9 from '@/assets/projects/image9.png'
-import epay1 from '@/assets/projects/epay/epay1.png'
-import epay2 from '@/assets/projects/epay/epay2.png'
-import epay3 from '@/assets/projects/epay/epay3.png'
-import epay4 from '@/assets/projects/epay/epay4.png'
-import academy1 from '@/assets/projects/academy/academy1.png'
-import academy2 from '@/assets/projects/academy/academy2.png'
-import academy3 from '@/assets/projects/academy/academy3.png'
-import omg1 from '@/assets/projects/OMG/omg1.png'
-import omg2 from '@/assets/projects/OMG/omg2.png'
+import image2 from '@/assets/Projects/image2.png';
+import image3 from '@/assets/Projects/image3.png';
+import image4 from '@/assets/Projects/image4.png';
+import image5 from '@/assets/Projects/image5.png';
+import image6 from '@/assets/Projects/image6.png';
+import image7 from '@/assets/Projects/image7.png';
+import image8 from '@/assets/Projects/image8.png'
+import image10 from '@/assets/Projects/image10.png'
+import image9 from '@/assets/Projects/image9.png'
+import epay1 from '@/assets/Projects/epay/epay1.png'
+import epay2 from '@/assets/Projects/epay/epay2.png'
+import epay3 from '@/assets/Projects/epay/epay3.png'
+import epay4 from '@/assets/Projects/epay/epay4.png'
+import academy1 from '@/assets/Projects/academy/academy1.png'
+import academy2 from '@/assets/Projects/academy/academy2.png'
+import academy3 from '@/assets/Projects/academy/academy3.png'
+import omg1 from '@/assets/Projects/OMG/omg1.png'
+import omg2 from '@/assets/Projects/OMG/omg2.png'
 
 const projectsData: Array<ProjectType> = [
 
