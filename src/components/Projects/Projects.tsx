@@ -7,11 +7,7 @@ import { BiArrowBack } from 'react-icons/bi'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { Link } from 'react-router-dom'
 
-type Props = {
-    setSelctedPage: (value: SelectedPage) => void
-}
-
-function Projects({ setSelctedPage }: Props) {
+function Projects() {
 
     //filtering
     const [selectedCategory, setSelectedCategory] = useState('all');
@@ -104,7 +100,6 @@ function Projects({ setSelctedPage }: Props) {
                 </div>
 
             </div >
-            <ContactMe setSelctedPage={setSelctedPage} />
         </>
     )
 }
