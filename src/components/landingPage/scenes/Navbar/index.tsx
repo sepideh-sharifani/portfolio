@@ -1,6 +1,5 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import {
-  AiFillInstagram,
   AiOutlineGithub,
   AiOutlineMenu,
   AiOutlineClose,
@@ -15,7 +14,7 @@ import useMediaQuery from "@/hooks/useMediaQuery";
 import ActionButton from "@/shared/ActionButton";
 import Link from "./Link";
 import LanguageSelector from "../../languageIdentifier/LanguageSelector";
-import { Text } from "@/container/Language";
+import { LanguageContext, Text } from "@/container/Language";
 
 type Props = {
   selectedPage: SelectedPage;
@@ -26,8 +25,9 @@ type Props = {
 const Navbar = ({ isAtTop, selectedPage, setSelectedPage }: Props) => {
   const isAboveMediumScreens = useMediaQuery("(min-width:900px)");
   const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false);
+  const { userLanguage } = useContext(LanguageContext);
   return (
-    <nav>
+    <nav dir={userLanguage === "fa" ? "rtl" : "ltr"}>
       <div className="fixed top-0 z-30 flex h-[65px] w-full items-center justify-between bg-gray-1 shadow-xl">
         <div className="mx-auto flex w-11/12 items-center justify-between">
           <div className="flex w-full items-center justify-between gap-20">

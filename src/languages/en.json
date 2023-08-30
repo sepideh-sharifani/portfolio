@@ -8,6 +8,7 @@
   "Sepideh": "Sepideh",
   "about": "About",
   "me": "Me",
+  "CONTACT": "Contact",
   "introduce": "Let Me Introduce Myself",
   "Passionate Developer": "passionate Developer 😊",
   "JavaScript/ ReactJS": "JavaScript/ ReactJS 🔥",
@@ -22,5 +23,9 @@
   "logic": ", Writing the logic behind the scenes via",
   "JAVA": "JavaScript, React",
   "features": "codes. I consider myself a responsible, and punctual person and I'm truely good at team work.",
-  "LOOK WHAT I CAN DO": "LOOK WHAT I CAN DO:"
+  "LOOK WHAT I CAN DO": "LOOK WHAT I CAN DO:",
+  "my": "My",
+  "view all projects": "view all projects",
+  "find": "Find me on :",
+  "Sumbit": "Sumbit"
 }

@@ -17,9 +17,10 @@ type Props = {
 console.log(languageOptions.en);
 
 const Home = ({ setSelectedPage }: Props) => {
-  const { userLanguage, userLanguageChange } = useContext(LanguageContext);
+  const { userLanguage } = useContext(LanguageContext);
   return (
     <section
+      dir={userLanguage === "fa" ? "rtl" : "ltr"}
       id="home"
       className="bg-gray-20 mt-14 flex h-full flex-col items-center justify-center bg-white bg-homeBg bg-cover bg-bottom pt-20 pb-4 xs:mt-5 xs:pt-0"
     >
