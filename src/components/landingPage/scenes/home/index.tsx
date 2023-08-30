@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 import me from "@/assets/me.jpg";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { LanguageContext, Text } from "@/container/Language";
-import { dictionaryList, languageOptions } from "@/languages";
+import { languageOptions } from "@/languages";
 import { useContext } from "react";
 
 type Props = {
@@ -51,7 +51,10 @@ const Home = ({ setSelectedPage }: Props) => {
               </a>
             </div>
             <p className="text-center text-xl font-bold text-gray-2">
-              Hey There, I'm <span className="text-orange-10">Sepideh</span>
+              <Text tid="Hey" />{" "}
+              <span className="text-orange-10">
+                <Text tid="Sepideh" />
+              </span>
             </p>
             <p className="my-5 h-10 text-center text-xl font-extrabold">
               {userLanguage === "en" ? (
@@ -83,7 +86,7 @@ const Home = ({ setSelectedPage }: Props) => {
             </p>
             <a href={resume}>
               <button className="mt-10 flex h-12 w-40 items-center justify-center rounded-xl bg-orange-10 font-bold transition delay-150 duration-300 hover:bg-gray-2 hover:text-white">
-                Get My Resume
+                <Text tid="Resume" />
               </button>
             </a>
           </motion.div>

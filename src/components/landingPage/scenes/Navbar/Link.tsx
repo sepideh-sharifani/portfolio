@@ -1,3 +1,4 @@
+import { Text } from "@/container/Language";
 import { SelectedPage } from "@/shared/types";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
@@ -24,7 +25,7 @@ function Link({ page, selectedPage, setSelectedPage }: Props) {
         href={`#${lowerCasePage}`}
         onClick={() => setSelectedPage(lowerCasePage)}
       >
-        {page}
+        <Text tid={page} />
       </AnchorLink>
     </div>
   );

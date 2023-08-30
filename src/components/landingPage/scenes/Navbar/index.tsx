@@ -15,6 +15,7 @@ import useMediaQuery from "@/hooks/useMediaQuery";
 import ActionButton from "@/shared/ActionButton";
 import Link from "./Link";
 import LanguageSelector from "../../languageIdentifier/LanguageSelector";
+import { Text } from "@/container/Language";
 
 type Props = {
   selectedPage: SelectedPage;
@@ -72,7 +73,7 @@ const Navbar = ({ isAtTop, selectedPage, setSelectedPage }: Props) => {
                     </a>
                   </div>
                   <ActionButton setSelectedPage={setSelectedPage}>
-                    Hire me
+                    <Text tid="Hire Me" />
                   </ActionButton>
                 </div>
               </div>

@@ -34,6 +34,7 @@ module.exports = {
       fontFamily: {
         Montserrat: ["Montserrat", "sans-serif"],
         Pacifico: ["Pacifico", "cursive"],
+        MyFont: ["MyFont"],
       },
       content: {
         arrow: "url('./assets/arrow.png')",
